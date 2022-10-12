@@ -1,4 +1,20 @@
 /* 1 */
+
+@media (min-width: 1024px){
+.hf-logo {
+	width: 200px;}
+}
+
+@media (max-width: 1023px){
+.hf-logo {
+	width: 150px;
+	margin-bottom: 15px;}
+}
+
+.hf-carousel-wrap{
+	width:100% !important
+}
+
 .trade-currency {
 	max-width: 1080px;
 }
@@ -308,22 +324,37 @@
 .chosen-currency__chart {
 	width: 460px;
 	padding-top: 20px;
+	display: flex;
+	flex-direction: column;
 }
 
 @media (max-width: 767px) {
 
 	.chosen-currency__chart {
 		width: 100%;
+		display: block;
 	}
 }
 
 .chart__title {
+	width: 100%;
 	font-size: 21px;
 	font-weight: 600;
 }
 
 .chart__live-graph {
 	margin: 11px 0px 0px 0px;
+	flex: 1;
+	min-height: 210px;
+	display:flex;
+	align-items: stretch;
+}
+
+@media (max-width: 767px) {
+
+	.chart__live-graph {
+		display: block;
+	}
 }
 
 .chart__live-graph img {
@@ -364,19 +395,19 @@
 	color:  #1B1B3C;
 }
 
-.chart__live-graph div {
+.chart__live-graph #chartContainerEURUSD {
 	padding:  0px;
 	margin: 0px;
-	height: 204px;
 	background: #D8D8D8;
 	border:  1px solid #979797;
+	color: #1B1B3C;
 	position: relative;
 }
 
 
 @media (max-width: 767px) {
 
-	.chart__live-graph div {
+	.chart__live-graph #chartContainerEURUSD {
 		height: 161px;
 	}
 }
@@ -1047,7 +1078,7 @@
 	padding:  0px 4px;
 	width: 134px;
 	width: 90px;
-	min-width: 12.5%;
+	min-width: 11%;
 }
 
 @media (max-width:  991px) {
