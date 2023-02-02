@@ -446,15 +446,17 @@ body.hf-bg-solid {
 
 body.small-bg {
     background-color: #1d1d40;
-    background-image: url(../images/bg-hyfin-vert.svg);
-    background-size:400px auto !important;
-    background-position: left center;
+    background-image: url(../images/bg-hyfin-vert.svg), url(../images/cube-bg.svg);
+    background-size:auto 100% !important;
+    background-position: left center, right top;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 @media only screen and (max-width: 1000px) {
   body.small-bg{
-    background-image: none !important
+    background-image: url(../images/hyfin-horiz.svg);
+    background-size:100% auto !important;
+    background-position: bottom 150px center
   }
 }
 
