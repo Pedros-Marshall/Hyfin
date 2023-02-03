@@ -370,8 +370,15 @@ var hyfin;
   })();
 })(jQuery);
 
+
 $(document).ready(function() {
-  hyfin.init();
+	
+const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+hyfin.init();
+
+if(!isMobile)	{
+
   $("body").niceScroll({
     cursorcolor:    "#FF6900",
     cursorwidth:    "12px",
@@ -389,5 +396,8 @@ $(document).ready(function() {
     iframeautoresize:   true,
     touchbehavior:    false,
     zindex: 999
-  });
+  });	
+	
+}
+
 });
